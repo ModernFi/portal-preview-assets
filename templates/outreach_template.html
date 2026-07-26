@@ -1,0 +1,35 @@
+<!-- NBID Depositor Portal Branding campaign — master template (clients + prospects)
+     Merge fields: replace {{custom1}} / {{custom2}} with your org's actual Outreach
+     custom field names before saving the template.
+       {{custom1}} = hosted screenshot URL   (image_url_custom1 column in the CSV)
+       {{custom2}} = the bank's portal URL   (portal_url_custom2 column in the CSV)
+-->
+<p>Hi {{first_name}},</p>
+
+<p>Hope you're having a great day! Reaching out with exciting news &mdash; the NBID team
+just rolled out a new update that allows banks on the network to further
+<a href="https://resources.nbid.com/changelog/depositor-portal-branding-configuration">customize
+their Depositor Portal experience</a> for reciprocal deposit accounts. Specifically, this
+product enhancement allows your team to customize:</p>
+
+<ul>
+  <li>Your logo</li>
+  <li>Accent colors</li>
+  <li>Your own Depositor Portal web address &mdash; <strong>{{custom2}}</strong></li>
+</ul>
+
+<p>In fact, here's what it looks like for {{account.name}}:</p>
+
+<p><img src="{{custom1}}" width="640" style="max-width:100%; border-radius:8px;"
+        alt="{{account.name}}'s Depositor Portal at {{custom2}} — your logo and colors"></p>
+
+<p>At NBID, we believe that your customers are your own, and they should interact with
+your brand for their reciprocal products too, not a third-party vendor's.</p>
+
+<p>With this in mind, let me know if you'd like to hop on a quick 15-minute call this
+week so that we can walk through these enhancements live!</p>
+
+<p>Best,<br>{{sender.first_name}}</p>
+
+<p style="font-size:11px; color:#98a2b3;">Preview generated from {{account.name}}'s
+public brand assets for illustration &mdash; nothing has changed on any live system.</p>
